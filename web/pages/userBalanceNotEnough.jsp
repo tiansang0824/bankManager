@@ -11,7 +11,6 @@
     <title>Title</title>
   </head>
   <body>
-  用户余额不足。
-  userBalanceNotEnough
+  用户余额不足，取款失败，退卡。
   </body>
 </html>

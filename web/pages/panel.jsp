@@ -39,12 +39,21 @@
         </script>
         <th><a href="javascript:void(0)" id="inputMoneyLink">存款</a></th>
         <script>
+            let isRightMoney = function (changedMoney){
+                let regex = /\b(?:100|[1-9]\d{2})\b/;
+                return regex.test(changedMoney);
+            };
             let inputMoneyLinkElt = document.getElementById("inputMoneyLink");
             inputMoneyLinkElt.onclick = function () {
                 alert("hello");
                 let changedMoney = prompt("输入存款金额：");
-                alert("取款金额为：" + changedMoney);
-                location = "<%=request.getContextPath()%>/function/editBalance?changedBalance="+changedMoney+"&direction=in";
+                if (!isRightMoney(changedMoney)) {
+                    alert("取款金额不正确，退卡。")
+                }
+                else {
+                    alert("取款金额为：" + changedMoney);
+                    location = "<%=request.getContextPath()%>/function/editBalance?changedBalance="+changedMoney+"&direction=in";
+                }
             }
         </script>
     </tr>

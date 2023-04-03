@@ -165,7 +165,7 @@ public class UserServlet extends HttpServlet {
             }
             // 判断是否超过最大失败次数。
             int failedCount = (int) session.getAttribute("failedCount");
-            if (failedCount >= 5) {
+            if (failedCount >= 3) {
                 // 错误次数达到五次，跳转到拒绝登录页面。
                 response.sendRedirect(request.getContextPath() + "/pages/rejectedPage.jsp");
             } else {

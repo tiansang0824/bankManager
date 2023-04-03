@@ -120,7 +120,8 @@ public class FunctionServlet extends HttpServlet {
                     User newInfo = userServiceImpl.selectUserById(userId);
                     session.setAttribute("userInfo", newInfo);
                     // 跳转回到控制台。
-                    response.sendRedirect(request.getContextPath()+"/pages/panel.jsp");
+                    request.getRequestDispatcher("/pages/outSuccess.jsp").forward(request, response);
+                    // response.sendRedirect(request.getContextPath()+"/pages/outSuccess.jsp");
                 } else {
                     // atm资金不足。
                     // 跳转到atm资金不足界面。

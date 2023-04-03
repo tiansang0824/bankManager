@@ -11,7 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-atm机器余额不足。
-atmBalanceNotEnough
+atm机器余额不足，取款失败，退卡。
 </body>
 </html>

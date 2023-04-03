@@ -11,6 +11,6 @@
     <title>rejectedPage</title>
 </head>
 <body>
-登录失败次数过多，已经拒绝登录。
+取款失败，密码连续三次错误，已吞卡。
 </body>
 </html>

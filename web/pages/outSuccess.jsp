@@ -1,16 +1,17 @@
-<%--
+<%@ page import="java.util.Timer" %><%--
   Created by IntelliJ IDEA.
   User: zht08
-  Date: 2023/3/30
-  Time: 15:27
+  Date: 2023/4/3
+  Time: 9:33
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>rejectedPage</title>
+    <title>取款成功</title>
 </head>
 <body>
-取款失败，密码连续三次错误，已吞卡。
+<a href="<%=request.getContextPath()%>/pages/panel.jsp">点击返回首页</a>
+
 </body>
 </html>
